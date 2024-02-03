@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import "@rainbow-me/rainbowkit/styles.css";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const mont = Montserrat({ subsets: ["latin"] });
 

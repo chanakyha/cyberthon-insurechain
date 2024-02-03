@@ -31,7 +31,12 @@ const PlanCard = ({
     type === "halfyearly" ? "6 Months" : type === "yearly" ? "Year" : "Month";
 
   return (
-    <div className={cn(className, "border p-4 rounded-md shadow-sm w-full")}>
+    <div
+      className={cn(
+        className,
+        "border p-4 bg-background rounded-md shadow-sm w-full"
+      )}
+    >
       <h1 className="text-lg md:text-xl font-medium text-primary underline underline-offset-4 mb-2">
         {title}
       </h1>
@@ -58,7 +63,6 @@ const PlanCard = ({
             ? "Year"
             : "Month"}{" "}
         </p>
-
         <Button className="mx">Activate plan</Button>
       </div>
     </div>
