@@ -42,7 +42,7 @@ const Header = () => {
 
   const path = usePathname();
   return (
-    <div className="border-b border-ui-peach-85 sticky top-0 z-50 bg-ui-peach-92">
+    <div className="border-b border-ui-peach-85 sticky top-0 z-50 bg-background">
       <div className="flex justify-between p-4 lg:px-16 xl:max-w-7xl xl:mx-auto items-center">
         <h1 className="text-primary dark:text-white outline-white text-base font-bold tracking-wider">
           InsureChain

@@ -71,4 +71,7 @@
   body {
     @apply bg-background text-foreground;
   }
+  .container-fix {
+    @apply p-4 md:p-16 xl:w-full xl:max-w-7xl xl:mx-auto;
+  }
 }

@@ -4,6 +4,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import "@rainbow-me/rainbowkit/styles.css";
+import Footer from "@/components/Footer";
 
 const mont = Montserrat({ subsets: ["latin"] });
 
@@ -27,7 +28,8 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Header />
-          {children}
+          <main className="min-h-[calc(100vh-18.7rem)]">{children}</main>
+          <Footer />
         </ThemeProvider>
       </body>
     </html>

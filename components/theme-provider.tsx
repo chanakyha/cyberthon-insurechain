@@ -6,10 +6,10 @@ import { type ThemeProviderProps } from "next-themes/dist/types";
 import { RainbowKitProvider, getDefaultWallets } from "@rainbow-me/rainbowkit";
 import { WagmiConfig, configureChains, createConfig } from "wagmi";
 import { publicProvider } from "wagmi/providers/public";
-import { polygon, polygonMumbai } from "viem/chains";
+import { celo, celoAlfajores } from "viem/chains";
 
 const { chains, publicClient } = configureChains(
-  [polygon, polygonMumbai],
+  [celo, celoAlfajores],
   [publicProvider()]
 );
 
